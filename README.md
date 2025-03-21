@@ -1,7 +1,5 @@
 # particle simulation
 
-# p5js-mandelbrot
-
 ### Javascript vs Java
 For this project, the code you are writing will look a little less similar to java. Loops, if statements, returns, mathmatical expressions are all the same. 
 Same as the last project, all variables should be declared with the `let` keyword instead of int, double, or String. 
