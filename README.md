@@ -1,4 +1,4 @@
-# particle simulation
+# Particle simulation
 
 ### Javascript vs Java
 For this project, the code you are writing will look a little less similar to java. Loops, if statements, returns, mathmatical expressions are all the same. 
@@ -13,7 +13,7 @@ Classes look a little bit different in javascript. See the javascript class reso
 
 [Javascript Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
 
-[Mr. Brown's video]()
+[Mr. Brown's video](https://app.screencastify.com/v3/watch/KVLllifV2otwJXqwo0qB)
 
 [IMPORTANT NOTE ON JAVASCRIPT](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
