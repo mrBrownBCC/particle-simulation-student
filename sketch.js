@@ -9,13 +9,17 @@ function setup() {
 }
 
 function draw(){
+  //background uses rgba. setting alpha to 20/255 creates the fading affect
   background(0,0,0,20);
-  //add if()
+ 
+  //mouseX, mouseY, mouseIsPressed all supplied by p5.js library
   if(mouseIsPressed){
     let p = new Particle(mouseX, mouseY)
     particles.push(p)
   }
 
+  //loops over your particles to display, move, and remove them
+  //backwards to prevent index skipping after deletions
   for(let i = particles.length -1;i >= 0;i--){
     particles[i].update();
     particles[i].display();
@@ -29,21 +33,24 @@ class Particle {
   constructor(x, y){
     this.x = x;
     this.y = y;
-    this.xVelocity = Math.random()*5 - 2.5;
-    this.yVelocity = -2 - Math.random()*2 - .5;
+    //STEP 4 - CREATE two variables to keep track of velocity. One for x and one for y
+
+    //BONUS STEP - add randomized color by choosing random values r, g, b
   }
+
   update(){
-    this.x += this.xVelocity;
-    this.y += this.yVelocity;
-    this.yVelocity += GRAVITY;
+    //STEP 5 - add velocities to x and y values. 
+    //add gravity to the y velocity. 
   }
   display(){ 
+    //IF DOING BONUS STEP, use rgb vals here. 
     fill(0,255,0); 
     noStroke();
     ellipse(this.x, this.y, 15);
   }
 
   shouldDie(){
-    return this.y > 650;
+    //STEP 6 - return true if y is off the screen. 
+    return false;
   }
 }  
